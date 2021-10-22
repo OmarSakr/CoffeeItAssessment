@@ -3,6 +3,7 @@ package com.codevalley.coffeeitassessment.main.adapters
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -44,7 +45,12 @@ class HomeAdapter(private val context: Context) : RecyclerView.Adapter<HomeAdapt
     }
 
     override fun getItemCount(): Int {
-        return itemList!![0].types.size
+
+        return if (itemList!!.isNotEmpty()) {
+            itemList!![0].types.size
+        } else {
+            0
+        }
     }
 
     @SuppressLint("NotifyDataSetChanged")

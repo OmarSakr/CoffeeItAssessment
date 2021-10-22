@@ -58,9 +58,10 @@ class HomeActivity : ParentClass<ActivityHomeBinding>() {
         lifecycleScope.launchWhenStarted {
             homeViewModel.getCoffee.collect {
                 initRecycler()
-                homeAdapter.addAll(it[0])
-                homeAdapter.notifyDataSetChanged()
-
+                if (it.isNotEmpty()){
+                    homeAdapter.addAll(it[0])
+                    homeAdapter.notifyDataSetChanged()
+                }
             }
         }
     }
