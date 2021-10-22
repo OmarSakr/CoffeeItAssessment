@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Coffee IT Assessment</string>
+    <string name="darkRoastedBeans">Dark Roasted Beans</string>
+    <string name="tabTheMachineToStart">Tab the machine to start</string>
+    <string name="brewWithLex">Brew with lex</string>
+    <string name="selectYourStyle">Select your style</string>
+    <string name="selectYourSize">Select your size</string>
+    <string name="next">Next</string>
+    <string name="overview">Overview</string>
+    <string name="brewYourCoffee">Brew your coffee</string>
+    <string name="edit">Edit</string>
+    <string name="enjoyYourCoffee">Enjoy your coffee!</string>
+</resources>
